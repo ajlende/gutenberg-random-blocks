@@ -1,0 +1,31 @@
+{
+	"name": "gutenberg-random-blocks",
+	"version": "1.0.0",
+	"license": "GPL-2.0+",
+	"main": "build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^5.0.0"
+	},
+	"scripts": {
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"lint-js": "wp-scripts lint-js",
+		"env": "wp-scripts env"
+	},
+	"eslintConfig": {
+		"extends": [
+			"plugin:@wordpress/eslint-plugin/recommended"
+		]
+	},
+	"wp-env": {
+		"plugin-dir": "gutenberg-random-blocks",
+		"plugin-name": "Gutenberg Random Blocks"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^3.3.0",
+		"@wordpress/components": "^8.4.0",
+		"@wordpress/element": "^2.9.0",
+		"@wordpress/i18n": "^3.7.0",
+		"classnames": "^2.2.6"
+	}
+}
